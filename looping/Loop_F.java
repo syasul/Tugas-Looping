@@ -11,13 +11,39 @@ package com.mycompany.looping;
  */
 public class Loop_F {
     public static void main(String []args){
+        System.out.println("For");
+        
+         for (int j = 5; j > 0; j--){
+            
+            for (int k = 0; k < 5; k++) {
+                System.out.print(j < 2 ? "0" : "*");
+            }
+            System.out.println("0");
+        }
+         
+        System.out.println("");
+        System.out.println("While");
+         
+        int x = 5;
+        while(x > 0){
+            int y = 0;
+            while(y < 5){
+                System.out.print(x < 2 ? "0" : "*");
+                y++;
+            }
+            System.out.println("0");
+            x--;
+        }
+        
+        System.out.println("");
+        System.out.println("Do While");
         int i = 5;
         do{
-            System.out.println("");
+            System.out.print("");
             int j = 0;
             do
             {
-                System.out.print(j < 2 ? "0" : "*");
+                System.out.print(i < 2 ? "0" : "*");
                 j++;
             } while (j < 5);
             System.out.println("0");
@@ -25,15 +51,6 @@ public class Loop_F {
         }while(i > 0);
         
         
-        
-//        for (int j = 5; j > 0; j--){
-//            System.out.print("");
-//            for (int k = 0; k < 5; k++) {
-//                System.out.print(j < 2 ? "0" : "*");
-//            }
-//            System.out.println("0");
-//            
-//
-//        } 
+      
     }
 }
